@@ -18,7 +18,7 @@
 	<Table.Root>
 		<Table.Header>
 			<Table.Row>
-				<Table.Head class="w-[80%]">Title</Table.Head>
+				<Table.Head class="w-[75%]">Title</Table.Head>
 				<Table.Head class="w-[5%] text-center">Link</Table.Head>
 				<Table.Head class="w-[20%] text-right">Price ($)</Table.Head>
 			</Table.Row>
