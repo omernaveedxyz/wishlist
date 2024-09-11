@@ -18,10 +18,9 @@
 	<Table.Root>
 		<Table.Header>
 			<Table.Row>
-				<Table.Head class="w-[70%]">Title</Table.Head>
+				<Table.Head class="w-[80%]">Title</Table.Head>
 				<Table.Head class="w-[5%] text-center">Link</Table.Head>
 				<Table.Head class="w-[20%] text-right">Price ($)</Table.Head>
-				<Table.Head class="w-[5%]"></Table.Head>
 			</Table.Row>
 		</Table.Header>
 		<Table.Body>
@@ -29,8 +28,8 @@
 				{@const price = item.price.toFixed(2)}
 
 				<Table.Row>
-					<Table.Cell class="font-medium">{item.title}</Table.Cell>
-					<Table.Cell class="text-center">
+					<Table.Cell class="break-all">{item.title}</Table.Cell>
+					<Table.Cell>
 						<Button variant="ghost" class="hover:text-sky-700">
 							<a href={item.link} target="_blank">
 								<ExternalLink size={20} class="hover:text-sky-700" />
@@ -38,7 +37,7 @@
 						</Button>
 					</Table.Cell>
 					<Table.Cell class="text-right">{price}</Table.Cell>
-					<Table.Cell class="text-right flex">
+					<Table.Cell>
 						<EditItemDialog bind:wishlist {index} />
 						<DeleteItemDialog bind:wishlist {index} />
 					</Table.Cell>
