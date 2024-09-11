@@ -28,7 +28,7 @@
 				{@const price = item.price.toFixed(2)}
 
 				<Table.Row>
-					<Table.Cell class="break-all">{item.title}</Table.Cell>
+					<Table.Cell>{item.title}</Table.Cell>
 					<Table.Cell>
 						<Button variant="ghost" class="hover:text-sky-700">
 							<a href={item.link} target="_blank">
